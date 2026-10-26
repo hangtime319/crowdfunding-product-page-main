@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-commissioner: "Commissioner", sans-serif;
+}
+
+body {
+  @apply font-commissioner;
+}
+
+.attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
