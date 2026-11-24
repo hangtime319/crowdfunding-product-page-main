@@ -5,7 +5,7 @@ const noReward = rewards.length + 1;
 
 const useCrowdfund = () => {
   const target = 100000;
-  
+
   const [backed, setBacked] = useState(89914);
   const [backers, setBackers] = useState(5007);
   const [quantity, setQuantity] = useState(rewards.map((reward) => reward.quantity));
@@ -39,9 +39,18 @@ const useCrowdfund = () => {
   }
 
   function confirmPledge(valueBacked) {
+    if (selectedReward === null) {
+      return;
+    }
+    
+    const position = rewards.findIndex((reward) => reward.id === selectedReward);
+    if (position !== -1 && quantity[position] <= 0) {
+      return;
+    }
+
     setBacked(Number(valueBacked) + backed);
     setBackers(backers + 1);
-    setQuantity(rewards.map((reward, index) => reward.id === selectedReward ? quantity[index] - 1 : quantity[index]));
+    setQuantity(rewards.map((reward, index) => (reward.id === selectedReward ? quantity[index] - 1 : quantity[index])));
     closeModal();
     setIsOpenModalSuccess(true);
   }

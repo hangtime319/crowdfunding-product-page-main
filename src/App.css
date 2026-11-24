@@ -2,10 +2,17 @@
 
 @theme {
   --font-commissioner: "Commissioner", sans-serif;
+  --color-green-400: hsl(176, 50%, 47%);
+  --color-green-700: hsl(176, 72%, 28%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-gray-500: hsl(0, 0%, 48%);
+  --color-circle-bookmark: #2F2F2F;
+  --color-path-bookmark: #B1B1B1;
 }
 
 body {
-  @apply font-commissioner;
+  @apply font-commissioner text-base bg-gray-50;
+  
 }
 
 .attribution { font-size: 0.6875rem; text-align: center; }
