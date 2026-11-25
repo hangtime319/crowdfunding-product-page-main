@@ -1,6 +1,6 @@
 import RewardCard from "./RewardCard";
 
-const About = ({ rewards, quantity, openModal, selectedReward }) => {
+const About = ({ rewards, quantity, openModal }) => {
   return (
     <section className="bg-white max-w-182.5 mx-auto px-6 py-8 md:px-12 md:py-14 mt-6 border border-gray-100 shadow-xs shadow-gray-100 rounded-lg">
       <div className="flex flex-col gap-8 mb-10">

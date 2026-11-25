@@ -1,6 +1,7 @@
 const BookmarkButton = ({ isBookmark, toggleBookmark }) => {
   return (
     <button
+      type="button"
       aria-pressed={isBookmark}
       className={`md:flex md:items-center md:gap-4 md:bg-gray-100 ${isBookmark ? "text-green-700" : "text-gray-500"} text-sm rounded-full pr-0 md:pr-6 md:font-bold focus-visible:ring-2 focus-visible:ring-gray-500 cursor-pointer transition-all duration-75 group`}
       onClick={toggleBookmark}>
