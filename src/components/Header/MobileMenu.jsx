@@ -7,7 +7,7 @@ const MobileMenu = ({isMenuOpen, toggleMobileMenu}) => {
         {isMenuOpen ? <img src={`${import.meta.env.BASE_URL}icon-close-menu.svg`} alt="" /> : <img src={`${import.meta.env.BASE_URL}icon-hamburger.svg`} alt="" />}
       </button>
       <nav className={`md:hidden text-black text-lg font-medium top-0 absolute left-0 w-full z-30 duration-200 ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}>
-        <ul className=" bg-white w-[90%] rounded-lg shadow-lg absolute top-22 left-1/2 -translate-x-1/2 divide-y divide-gray-500/30">
+        <ul className=" bg-white w-[90%] rounded-lg shadow-lg absolute top-22 left-1/2 -translate-x-1/2 divide-y divide-gray-500/20">
           <li>
             <a className="block px-6 py-4.5 focus-visible:-outline-offset-2 focus-visible:outline-gray-500" href="#">About</a>
           </li>

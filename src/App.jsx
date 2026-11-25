@@ -16,7 +16,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="px-6 md:px-0">
+      <main className="px-6 pb-16 md:px-0">
         <ProjectIntro isBookmark={isBookmark} toggleBookmark={toggleBookmark} openModal={openModal} />
         <ProgressStats target={target} backed={backed} backers={backers} daysLeft={daysLeft} progress={progress} />
         <About quantity={quantity} rewards={rewards} openModal={openModal} />

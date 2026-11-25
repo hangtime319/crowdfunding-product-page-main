@@ -27,7 +27,7 @@ const PledgeOption = ({ reward, quantity, selectedReward, setSelectedReward, con
               className="aspect-square rounded-full appearance-none size-5 border-2 border-gray-500/30 cursor-pointer checked:bg-green-400 p-1 bg-clip-content disabled:cursor-not-allowed"
             />
             <div className="flex flex-col md:flex-row gap-1 md:gap-3">
-              <h3 className="font-bold text-base">{reward.name}</h3>
+              <h3 className={`font-bold text-base ${isOutOfStock ? "" : "hover:text-green-400 cursor-pointer transition-colors duration-100"}`}>{reward.name}</h3>
               {reward.minPledge && <span className="text-green-400">Pledge ${reward.minPledge} or more</span>}
             </div>
           </div>

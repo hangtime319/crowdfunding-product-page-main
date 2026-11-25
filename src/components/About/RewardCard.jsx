@@ -3,8 +3,8 @@ import Button from "../ui/Button";
 const RewardCard = ({ reward, quantity, openModal }) => {
   const isOutOfStock = quantity <= 0;
   return (
-    <div className="rounded-lg border border-gray-500/30 mt-6">
-      <div className={`${isOutOfStock ? "opacity-40" : "opacity-100"} flex flex-col gap-6 md:gap-6 p-6 md:p-8`}>
+    <div className={`rounded-lg border ${isOutOfStock ? "border-gray-500/20" : "border-gray-500/40"} mt-6`}>
+      <div className={`${isOutOfStock ? "opacity-30" : "opacity-100"} flex flex-col gap-6 md:gap-6 p-6 md:p-8`}>
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-1 md:gap-0">
           <h3 className="font-bold text-base md:text-xl">{reward.name}</h3>
           <span className="text-green-400">Pledge ${reward.minPledge} or more</span>

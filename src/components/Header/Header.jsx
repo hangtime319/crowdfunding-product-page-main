@@ -17,17 +17,17 @@ const Header = () => {
       <nav className="hidden md:flex text-white text-sm">
         <ul className="flex items-center gap-6">
           <li>
-            <a href="#" className="hover:underline focus-visible:outline-2 focus-visible:outline-white">
+            <a href="#" className="hover:border-b hover:border-b-white/30 focus-visible:outline-2 focus-visible:outline-white">
               About
             </a>
           </li>
           <li>
-            <a href="#" className="hover:underline focus-visible:outline-2 focus-visible:outline-white">
+            <a href="#" className="hover:border-b hover:border-b-white/30 focus-visible:outline-2 focus-visible:outline-white">
               Discover
             </a>
           </li>
           <li>
-            <a href="#" className="hover:underline focus-visible:outline-2 focus-visible:outline-white">
+            <a href="#" className="hover:border-b hover:border-b-white/30 focus-visible:outline-2 focus-visible:outline-white">
               Get Started
             </a>
           </li>
